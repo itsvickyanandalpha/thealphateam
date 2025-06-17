@@ -78,11 +78,11 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-20 bg-gradient-to-r from-[#AB3500] via-[#C56100] to-[#FFC300] text-white overflow-hidden">
+    <section className="relative font-[mainfont] w-full h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-20 bg-gradient-to-r from-[#AB3500] via-[#C56100] to-[#FFC300] text-white overflow-hidden">
       
       {/* Left Content */}
       <div className="z-10 max-w-xl flex flex-col space-y-4 sm:space-y-6 p-20 sm:p-20 lg:p-2 text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-widest">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
           DIGITAL <br /> MARKETING <br /> FOR{" "}
           <span className="inline-block bg-white text-black px-2 py-1 rounded-xl">
             POWERFUL

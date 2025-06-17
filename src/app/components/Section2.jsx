@@ -34,32 +34,62 @@ export const clientsData = [
       height: "h-[16px] lg:h-[35px]",
     },
     {
-        id: 1,
+        id: 7,
         img: "/logos/c1.png",
         height: "h-[24px] lg:h-[47px]",
       },
       {
-        id: 2,
+        id: 8,
         img: "/logos/c2.png",
         height: "h-[20px] lg:h-[25px]",
       },
       {
-        id: 3,
+        id: 9,
         img: "/logos/c3.png",
         height: "h-[40px] lg:h-[100px]",
       },
       {
-        id: 4,
+        id: 10,
         img: "/logos/c4.png",
         height: "h-[53px] lg:h-[100px]",
       },
       {
-        id: 5,
+        id: 11,
         img: "/logos/c5.png",
         height: "h-[50px] lg:h-[80px]",
       },
       {
-        id: 6,
+        id: 12,
+        img: "/logos/c6.png",
+        height: "h-[16px] lg:h-[35px]",
+      },
+      {
+        id: 13,
+        img: "/logos/c1.png",
+        height: "h-[24px] lg:h-[47px]",
+      },
+      {
+        id: 14,
+        img: "/logos/c2.png",
+        height: "h-[20px] lg:h-[25px]",
+      },
+      {
+        id: 15,
+        img: "/logos/c3.png",
+        height: "h-[40px] lg:h-[100px]",
+      },
+      {
+        id: 16,
+        img: "/logos/c4.png",
+        height: "h-[53px] lg:h-[100px]",
+      },
+      {
+        id: 17,
+        img: "/logos/c5.png",
+        height: "h-[50px] lg:h-[80px]",
+      },
+      {
+        id: 18,
         img: "/logos/c6.png",
         height: "h-[16px] lg:h-[35px]",
       },
@@ -69,7 +99,7 @@ export const clientsData = [
 
 const Section2 = () => {
   return (
-    <div className="w-screen h-[45vh] bg-[#121212] flex flex-col items-center justify-center text-white uppercase">
+    <div className="w-screen h-[35vh] md:h-[45vh] font-[mainfont] lg:h-[45vh] bg-[#121212] flex flex-col items-center justify-center text-white uppercase">
        {/* <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight tracking-widest text-center">Clients we have worked for</div> */}
        {/* <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight tracking-widest text-center">Clients we have worked for</div> */}
        <ClientsSlider data={clientsData}/>

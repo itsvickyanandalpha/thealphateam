@@ -18,9 +18,16 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: 'mainfont';
+  src: url('/fonts/ESDokument-ExSmbd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'mainfont', sans-serif;
 }
