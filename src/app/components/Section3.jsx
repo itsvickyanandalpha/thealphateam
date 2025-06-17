@@ -142,7 +142,7 @@ const Section3 = () => {
               alt=""
               className="h-full w-full object-cover"
             />
-            <div className="text-base flex items-center justify-center absolute bottom-10 right-[-70px] bg-gradient-to-r p-3 sm:p-5 from-[#EF4B00] to-[#FF9326] rounded-br-4xl text-white text-xs sm:text-sm md:text-base max-w-[120%]">
+            <div className="text-base flex items-center justify-center absolute bottom-10 right-0 md:right-[-70px] bg-gradient-to-r p-3 sm:p-5 from-[#EF4B00] to-[#FF9326] rounded-br-4xl text-white text-xs sm:text-sm md:text-base max-w-[120%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </div>

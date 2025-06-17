@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Section2 from "./components/Section2";
 import PinWrapper from "./components/PinWrapper";
 import Section3 from "./components/Section3";
+import Section4 from "./components/Section4";
 
 export default function Home() {
   return (
@@ -12,7 +13,12 @@ export default function Home() {
       <Navbar />
         <Hero />
         <Section2 />
+        {/* <PinWrapper> */}
         <Section3 />
+        {/* </PinWrapper> */}
+        {/* <PinWrapper> */}
+        <Section4 />
+        {/* </PinWrapper> */}
     </div>
   );
 }

@@ -112,14 +112,14 @@ const HeroSection = () => {
           alt="Astronaut"
           width={300}
           height={300}
-          className="object-contain absolute z-0 right-0 bottom-0 w-[150px] sm:w-[220px] lg:w-[540px] h-auto"
+          className="object-contain absolute z-0 right-0 bottom-0 w-[250px] sm:w-[220px] lg:w-[540px] h-auto "
         />
         <Image
           src="/images/tat.png"
           alt="Tat"
           width={300}
           height={300}
-          className="object-contain absolute z-0 right-20 sm:right-70 bottom-0 w-[120px] sm:w-[180px] lg:w-[540px] h-auto"
+          className="object-contain absolute z-0 right-30 sm:right-40 lg:right-70 bottom-0 w-[220px] sm:w-[180px] lg:w-[540px] h-auto"
         />
       </div>
 
