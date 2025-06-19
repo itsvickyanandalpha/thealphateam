@@ -202,7 +202,7 @@ const Section4 = () => {
           {/* Middle Image */}
           <div className="h-auto md:h-[33%] relative flex items-center justify-center">
             <img
-              src="/images/results.png"
+              src="/images/Results.png"
               alt="Overlap"
               className="w-[50%] sm:w-[40%] md:w-[60%] lg:w-[60%] h-auto"
             />

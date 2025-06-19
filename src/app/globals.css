@@ -24,10 +24,38 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'runalto';
+  src: url('/fonts/Runalto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* since we doubled the logos */
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   font-family: 'mainfont', sans-serif;
+  font-family: 'runalto', sans-serif;
+  font-family: 'montserrat', sans-serif;
 }
