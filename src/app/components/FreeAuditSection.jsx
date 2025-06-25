@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const FreeAuditSection = () => {
   return (
     <div className="w-screen font-[mainfont] h-[40vh] bg-gradient-to-r from-[#EF4B00] to-[#FF9326] flex flex-col items-center justify-center px-4 text-center">
-      
       {/* Main Text */}
       <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold font-[mainfont] leading-tight uppercase">
         Request a Free Audit. <br /> Outsmart Your Competition

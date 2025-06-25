@@ -47,7 +47,7 @@ const InfScr = () => {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className='h-[50vh] mt-[-50px] flex flex-col bg-white text-white font-[mainfont] items-center justify-center'>
+    <div className='h-[50vh] w-screen mt-[-50px] flex flex-col bg-white text-white font-[mainfont] items-center justify-center'>
     <div className="w-full h-[50px] overflow-hidden  flex items-center relative mb-[48px]"
     style={{ transform: 'skewY(-2deg)',  backgroundColor:"#EF4B00" }}
     >
