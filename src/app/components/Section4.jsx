@@ -135,9 +135,9 @@
 
 // export default Section4;
 
-
 import React, { useState } from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import TextAnimator from "./TextAnimator";
 
 const Section4 = () => {
   const [position, setPosition] = useState(0);
@@ -153,20 +153,21 @@ const Section4 = () => {
   console.log(position, "position===========");
 
   return (
-    <div className="w-screen h-auto lg:h-screen p-5 sm:p-10 pt-20 pb-20 bg-white flex flex-col">
+    <div className="w-screen h-auto lg:h-screen p-5 sm:p-10 pt-20 pb-20 bg-white flex flex-col mt-20 mb-20">
       {/* Heading */}
-      <div className="h-auto lg:h-[20%] w-full text-center lg:text-left">
-        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase mb-2 bg-gradient-to-r from-[#171717] to-[#EF4B00] bg-clip-text text-transparent">
-          Full-Funnel Marketing
+      <TextAnimator>
+        <div className="h-auto lg:h-[20%] w-full text-center lg:text-left">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase mb-2 bg-gradient-to-r from-[#171717] to-[#EF4B00] bg-clip-text text-transparent">
+            Full-Funnel Marketing
+          </div>
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase bg-gradient-to-r from-[#171717] to-[#EF4B00] bg-clip-text text-transparent">
+            That Drives Sales
+          </div>
         </div>
-        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase bg-gradient-to-r from-[#171717] to-[#EF4B00] bg-clip-text text-transparent">
-          That Drives Sales
-        </div>
-      </div>
+      </TextAnimator>
 
       {/* Main Content */}
       <div className="h-auto lg:h-[80%] w-full flex flex-col lg:flex-row mt-5">
-        
         {/* Left Side Image */}
         <div
           className="w-full lg:w-[60%] h-[300px] sm:h-[400px] lg:h-full bg-center bg-cover relative"
@@ -189,16 +190,16 @@ const Section4 = () => {
 
         {/* Right Side Content */}
         <div className="w-full lg:w-[40%] h-auto ml-5 flex flex-col relative mt-5 lg:mt-0">
-
           {/* Text */}
-          <div className="h-auto md:h-[33%] text-sm sm:text-base text-[#171717] flex items-center justify-center text-center lg:text-left">
-            Are you a SaaS or IT services company ready to scale and boost
-            profits? You’re in the right place. We’re expert digital marketers
-            using AI-driven solutions to craft personalized outreach, nurture
-            leads, and drive results—plus deep expertise in Google Ads,
-            LinkedIn, and SEO.
-          </div>
-
+          <TextAnimator>
+            <div className="h-auto md:h-[33%] text-sm sm:text-base text-[#171717] flex items-center justify-center text-center lg:text-left">
+              Are you a SaaS or IT services company ready to scale and boost
+              profits? You’re in the right place. We’re expert digital marketers
+              using AI-driven solutions to craft personalized outreach, nurture
+              leads, and drive results—plus deep expertise in Google Ads,
+              LinkedIn, and SEO.
+            </div>
+          </TextAnimator>
           {/* Middle Image */}
           <div className="h-auto md:h-[33%] relative flex items-center justify-center">
             <img

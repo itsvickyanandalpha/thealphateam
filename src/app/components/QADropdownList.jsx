@@ -44,6 +44,7 @@
 
 import React, { useState } from "react";
 import InfScr from "./InfScr";
+import TextAnimator from "./TextAnimator";
 
 const data = [
   {
@@ -86,20 +87,20 @@ const data = [
 
 const QADropdownList = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [show, setShow] = useState([true, true, true, true, true, true]); 
+  const [show, setShow] = useState([true, true, true, true, true, true]);
   console.log(show);
 
   const handleMouseEnter = (index) => {
     const newShow = [true, true, true, true, true, true];
-    newShow[index] = false; 
+    newShow[index] = false;
     setShow(newShow);
-    // toggleDropdown(index)
+    toggleDropdown(index);
   };
 
   const handleMouseLeave = (index) => {
     const newShow = [true, true, true, true, true, true];
     setShow(newShow);
-    // toggleDropdown(index)
+    toggleDropdown(index);
   };
 
   const toggleDropdown = (index) => {
@@ -108,7 +109,9 @@ const QADropdownList = () => {
 
   return (
     <div className="w-screen h-full pt-10 font-[mainfont] space-y-4 bg-white flex flex-col items-center justify-center">
-      <div className="w-[70%]">What sets us apart?</div>
+      <div className="w-[70%]">
+        <TextAnimator>What sets us apart?</TextAnimator>
+      </div>
       {data.map((item, index) => (
         <div key={index} className="border-t w-[70%] py-4">
           {/* Main Row */}
@@ -159,23 +162,29 @@ const QADropdownList = () => {
             }
 
             {/* This flex-1 container grows as image expands */}
-            <span className="flex-1 text-center font-black text-4xl flex items-center justify-center gap-2 transition-all duration-700 ease-in-out group-hover:gap-6">
-              {item.title1}
-              <img
-                src="/images/56.png"
-                alt="56"
-                className="
+            <TextAnimator>
+              <span className="flex-1 text-center font-black text-4xl flex items-center justify-center gap-2 transition-all duration-700 ease-in-out group-hover:gap-6">
+                {item.title1}
+                <img
+                  src="/images/56.png"
+                  alt="56"
+                  className="
                             w-0 h-0 
                             transition-all duration-1200 ease-in-out
                             group-hover:w-[70px] group-hover:h-[70px]
                         "
-              />
-              {item.title2}
-            </span>
+                />
+                {item.title2}
+              </span>
+            </TextAnimator>
             <span
               className={`
                     text-base text-gray-600 w-auto text-right transition-all duration-1000 ease-in-out
-                    ${show[index] ? "opacity-100 scale-100" : "opacity-0 scale-0"}
+                    ${
+                      show[index]
+                        ? "opacity-100 scale-100"
+                        : "opacity-0 scale-0"
+                    }
                 `}
             >
               {openIndex === index ? "See Less" : "See More"}
@@ -186,10 +195,10 @@ const QADropdownList = () => {
           <div
             className={`transition-all duration-500 ease-in-out overflow-hidden 
               ${
-              openIndex === index
-                ? "max-h-40 opacity-100 mt-4"
-                : "max-h-0 opacity-0"
-            }`}
+                openIndex === index
+                  ? "max-h-40 opacity-100 mt-4"
+                  : "max-h-0 opacity-0"
+              }`}
           >
             <p className="text-gray-700 text-center">{item.description}</p>
           </div>

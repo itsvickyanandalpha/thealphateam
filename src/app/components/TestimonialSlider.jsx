@@ -243,6 +243,7 @@
 // export default TestimonialSlider;
 
 import React, { useState } from "react";
+import TextAnimator from "./TextAnimator";
 
 const testimonials = [
   {
@@ -371,11 +372,19 @@ const TestimonialSlider = () => {
                 alt="Company Logo"
                 className="w-30 mx-auto md:mx-0 mb-4"
               />
-              <p className="text-lg mb-4 font-[montserrat] text-gray-700">
-                “{item.feedback}”
-              </p>
-              <p className="font-bold text-gray-900 mb-2">{item.name}</p>
-              <p className="text-gray-700 font-[montserrat]">{item.position}</p>
+              <TextAnimator>
+                <p className="text-lg mb-4 font-[montserrat] text-gray-700">
+                  “{item.feedback}”
+                </p>
+              </TextAnimator>
+              <TextAnimator>
+                <p className="font-bold text-gray-900 mb-2">{item.name}</p>
+              </TextAnimator>
+              <TextAnimator>
+                <p className="text-gray-700 font-[montserrat]">
+                  {item.position}
+                </p>
+              </TextAnimator>
             </div>
           </div>
         ))}

@@ -1,8 +1,7 @@
-
-
 "use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import TextAnimator from "./TextAnimator";
 
 const Navbar = () => {
   const navbarRef = useRef(null);
@@ -54,8 +53,10 @@ const Navbar = () => {
         {/* <button className="hidden md:block bg-white text-blue-600 px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition-colors">
           TALK TO US
         </button> */}
-         <button className="bg-black text-white text-sm py-2 px-5 rounded-full flex items-center space-x-2 w-max">
-          <span >TALK TO US</span>
+        <button className="bg-black text-white text-sm py-2 px-5 rounded-full flex items-center space-x-2 w-max">
+          <TextAnimator>
+            <span>TALK TO US</span>
+          </TextAnimator>
           {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L21 12l-3.75 5.25M21 12H3" />
           </svg> */}

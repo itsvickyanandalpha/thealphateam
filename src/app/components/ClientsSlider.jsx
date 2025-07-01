@@ -27,7 +27,6 @@
 //     return () => window.removeEventListener('resize', handleResize);
 //   }, []);
 
-
 //   return (
 //     <div className="relative z-10 bg-transparent flex flex-col items-center justify-center">
 //       {/* <div className="flex flex-col items-center">
@@ -96,24 +95,23 @@
 
 // export default ClientsSlider;
 
-
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ImageRotate from "./animations/image-rotate";
 import { cn } from "../lib/utils";
+import TextAnimator from "./TextAnimator";
 
 const ClientsSlider = ({ data }) => {
   const [screenSize, setScreenSize] = useState({
     width: 0,
-    height: 0
+    height: 0,
   });
 
   useEffect(() => {
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,
-        height: window.innerHeight
+        height: window.innerHeight,
       });
     };
 
@@ -130,38 +128,100 @@ const ClientsSlider = ({ data }) => {
 
   return (
     <div className="relative z-10 bg-transparent flex flex-col items-center justify-center">
-      <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight tracking-widest text-center">
-        Clients we have worked for
-      </div>
+      <TextAnimator>
+        <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight tracking-widest text-center">
+          Clients we have worked for
+        </div>
+      </TextAnimator>
 
       <div className="container mt-0 flex w-11/12 justify-center">
         <div className="w-full px-[0px] overflow-x-auto pt-10">
           {screenSize.width > 1024 ? (
             <div className="flex flex-nowrap gap-20">
-              <ImageRotate imgs={data.slice(0, 3)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(3, 6)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(6, 9)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(9, 12)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(12, 15)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(15, 18)} delay={0} screenSize={screenSize} />
+              <ImageRotate
+                imgs={data.slice(0, 3)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(3, 6)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(6, 9)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(9, 12)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(12, 15)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(15, 18)}
+                delay={0}
+                screenSize={screenSize}
+              />
             </div>
           ) : screenSize.width >= 740 && screenSize.width < 1024 ? (
             <div className="flex flex-nowrap gap-20">
-              <ImageRotate imgs={data.slice(0, 3)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(3, 6)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(6, 9)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(9, 12)} delay={0} screenSize={screenSize} />
+              <ImageRotate
+                imgs={data.slice(0, 3)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(3, 6)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(6, 9)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(9, 12)}
+                delay={0}
+                screenSize={screenSize}
+              />
             </div>
           ) : screenSize.width >= 500 && screenSize.width < 740 ? (
             <div className="flex flex-nowrap gap-20">
-              <ImageRotate imgs={data.slice(0, 3)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(3, 6)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(6, 9)} delay={0} screenSize={screenSize} />
+              <ImageRotate
+                imgs={data.slice(0, 3)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(3, 6)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(6, 9)}
+                delay={0}
+                screenSize={screenSize}
+              />
             </div>
           ) : (
             <div className="flex flex-nowrap gap-20">
-              <ImageRotate imgs={data.slice(0, 3)} delay={0} screenSize={screenSize} />
-              <ImageRotate imgs={data.slice(3, 6)} delay={0} screenSize={screenSize} />
+              <ImageRotate
+                imgs={data.slice(0, 3)}
+                delay={0}
+                screenSize={screenSize}
+              />
+              <ImageRotate
+                imgs={data.slice(3, 6)}
+                delay={0}
+                screenSize={screenSize}
+              />
             </div>
           )}
         </div>

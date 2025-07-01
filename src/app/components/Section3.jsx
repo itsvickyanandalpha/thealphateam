@@ -98,9 +98,9 @@
 
 // export default Section3;
 
-
 import React from "react";
 import Sec3Child from "./Sec3Child";
+import TextAnimator from "./TextAnimator";
 
 const Section3 = () => {
   return (
@@ -110,15 +110,21 @@ const Section3 = () => {
         <div className="w-full flex flex-col lg:flex-row h-auto lg:h-[25%]">
           {/* Left Text and Image */}
           <div className="w-full lg:w-[65%] relative flex flex-col justify-center items-start pb-10">
-            <div className="text-3xl sm:text-4xl md:text-5xl text-wrap md:text-nowrap uppercase mb-2 bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
-              Lorem Ipsum is simply dummy
-            </div>
-            <div className="text-3xl sm:text-4xl md:text-5xl uppercase mb-2 bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
-              text of the printing
-            </div>
-            <div className="text-3xl sm:text-4xl md:text-5xl uppercase bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
-              industry.
-            </div>
+            <TextAnimator>
+              <div className="text-3xl sm:text-4xl md:text-5xl text-wrap md:text-nowrap uppercase mb-2 bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
+                Lorem Ipsum is simply dummy
+              </div>
+            </TextAnimator>
+            <TextAnimator>
+              <div className="text-3xl sm:text-4xl md:text-5xl uppercase mb-2 bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
+                text of the printing
+              </div>
+            </TextAnimator>
+            <TextAnimator>
+              <div className="text-3xl sm:text-4xl md:text-5xl uppercase bg-gradient-to-r from-[#FFB898] to-[#EF4B00] bg-clip-text text-transparent">
+                industry.
+              </div>
+            </TextAnimator>
 
             <img
               src="images/About.png"
@@ -129,7 +135,12 @@ const Section3 = () => {
 
           {/* Right Text */}
           <div className="w-full lg:w-[35%] text-sm text-[#9F9C9C] md:pl-20 md:pr-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <TextAnimator>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </TextAnimator>
           </div>
         </div>
 
@@ -143,7 +154,12 @@ const Section3 = () => {
               className="h-full w-full object-cover"
             />
             <div className="text-base flex items-center justify-center absolute bottom-10 right-0 md:right-[-70px] bg-gradient-to-r p-3 sm:p-5 from-[#EF4B00] to-[#FF9326] rounded-br-4xl text-white text-xs sm:text-sm md:text-base max-w-[120%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <TextAnimator>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </TextAnimator>
             </div>
           </div>
 
@@ -162,7 +178,12 @@ const Section3 = () => {
               />
             </div>
             <div className="w-[50%] text-xs text-[#9F9C9C] mt-5 text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <TextAnimator>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </TextAnimator>
             </div>
           </div>
         </div>

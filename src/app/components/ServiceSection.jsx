@@ -1,4 +1,5 @@
 import React from "react";
+import TextAnimator from "./TextAnimator";
 
 const ServiceSection = ({
   arrowPosition,
@@ -9,8 +10,8 @@ const ServiceSection = ({
   logo,
 }) => {
   return (
-    <div className="w-screen h-[100vh] font-[mainfont] bg-gray-50 flex items-center justify-center px-10 ">
-      <div className="flex flex-col md:flex-row w-full h-[90%] bg-white rounded-xl shadow-lg overflow-hidden relative p-10 pb-20">
+    <div className="w-screen h-[100vh] font-[mainfont] bg-transparent flex items-center justify-center px-10 ">
+      <div className="flex flex-col md:flex-row w-full h-[90%]  rounded-xl shadow-lg overflow-hidden relative p-10 pb-20">
         {/* Left Section */}
         <div className="md:w-1/2 w-full flex flex-col text-black justify-center p-10 relative">
           {alphaboxposition ? (
@@ -26,9 +27,11 @@ const ServiceSection = ({
                 }}
                 className="text-3xl md:text-4xl font-black leading-tight mb-6"
               >
-                {title}
+                <TextAnimator>{title}</TextAnimator>
               </h2>
-              <p className="text-gray-600 mb-8 text-lg w-[80%]">{subtitle}</p>
+              <p className="text-gray-600 mb-8 text-lg w-[80%]">
+                <TextAnimator>{subtitle}</TextAnimator>
+              </p>
 
               {/* Logo Box */}
               <div className=" w-[60%] h-[40%] bg-black flex items-center justify-center rounded-md">
@@ -52,9 +55,11 @@ const ServiceSection = ({
                 }}
                 className="text-3xl md:text-4xl font-black leading-tight mb-6 uppercase"
               >
-                {title}
+                <TextAnimator>{title}</TextAnimator>
               </h2>
-              <p className="text-gray-600 mb-8 text-lg w-[80%]">{subtitle}</p>
+              <p className="text-gray-600 mb-8 text-lg w-[80%]">
+                <TextAnimator>{subtitle}</TextAnimator>
+              </p>
             </div>
           )}
         </div>
@@ -74,7 +79,7 @@ const ServiceSection = ({
         </div>
 
         {/* Bottom Circle Arrow Button */}
-        <div
+        {/* <div
           style={{
             position: "absolute",
             // bottom: "100px",
@@ -85,10 +90,10 @@ const ServiceSection = ({
           <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center cursor-pointer shadow-md">
             <span className="text-white text-2xl">&#8594;</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Border Line */}
-        <div className="absolute bottom-10 left-0 w-full h-[2px] bg-orange-500"></div>
+        {/* <div className="absolute bottom-10 left-0 w-full h-[2px] bg-orange-500"></div> */}
       </div>
     </div>
   );

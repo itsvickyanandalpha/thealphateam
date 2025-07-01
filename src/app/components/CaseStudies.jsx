@@ -1,5 +1,6 @@
 import React from "react";
 import ZoomInImage from "./ZoomInImage";
+import TextAnimator from "./TextAnimator";
 
 const caseStudies = [
   {
@@ -39,7 +40,11 @@ const CaseStudies = () => {
     <div className="h-full w-screen flex flex-col mt-10">
       <div className="flex flex-row">
         <div className="p-10">
-          <div className="uppercase text-6xl font-black p-5">case studies</div>
+          <TextAnimator>
+            <div className="uppercase text-6xl font-black p-5">
+              case studies
+            </div>
+          </TextAnimator>
           <div className="p-5">
             {/* <img
               src={caseStudies[0].img}

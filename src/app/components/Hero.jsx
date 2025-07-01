@@ -1,5 +1,3 @@
-
-
 // import React from "react";
 // import Image from "next/image";
 
@@ -71,30 +69,38 @@
 
 // export default HeroSection;
 
-
-
 import React from "react";
 import Image from "next/image";
+import TextAnimator from "./TextAnimator";
 
 const HeroSection = () => {
   return (
     <section className="relative font-[mainfont] w-full h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-20 bg-gradient-to-r from-[#AB3500] via-[#C56100] to-[#FFC300] text-white overflow-hidden">
-      
       {/* Left Content */}
+
       <div className="z-10 max-w-xl flex flex-col space-y-4 sm:space-y-6 p-20 sm:p-20 lg:p-2 text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
-          DIGITAL <br /> MARKETING <br /> FOR{" "}
-          <span className="inline-block bg-white text-black px-2 py-1 rounded-xl">
-            POWERFUL
-          </span>{" "}
-          <br /> RESULTS.
-        </h1>
-        <p className="text-xs sm:text-sm lg:text-base text-gray-200">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <TextAnimator>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
+            {" "}
+            DIGITAL <br /> MARKETING <br /> FOR{" "}
+            <span className="inline-block bg-white text-black px-2 py-1 rounded-xl">
+              POWERFUL
+            </span>{" "}
+            <br /> RESULTS.
+          </h1>
+        </TextAnimator>
+        <TextAnimator>
+          <p className="text-xs sm:text-sm lg:text-base text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </TextAnimator>
+
         <button className="bg-black text-white text-xs sm:text-sm py-2 sm:py-3 px-4 sm:px-6 rounded-full flex items-center space-x-2 mx-auto lg:mx-0 w-max">
-          <span>TALK TO US</span>
+          <TextAnimator>
+            <span>TALK TO US</span>
+          </TextAnimator>
+
           <Image
             src="/logos/heroarrow.png"
             alt="Logo"
